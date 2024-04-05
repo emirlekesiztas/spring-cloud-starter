@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+
+spring:
+  data:
+    mongodb:
+      database: mongo
+      container_name: mongo
+      hostname: mongo
+      port: 8080
